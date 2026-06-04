@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h2>StudentMS</h2>
+            </div>
+
+            <ul>
+                <li class="active">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-users"></i>
+                    Students
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-book"></i>
+                    Courses
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-chart-line"></i>
+                    Reports
+                </li>
+            </ul>
+
+        </aside>
+
+        <!-- Main Content -->
+
+        <main class="main-content">
+
+            <!-- Header -->
+
+            <header>
+
+                <div>
+                    <h1>Student Management Dashboard</h1>
+                    <p>Manage students efficiently</p>
+                </div>
+
+                <div class="profile">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+            </header>
+
+            <!-- Statistics -->
+
+            <section class="stats">
+
+                <div class="card">
+
+                    <h3>Total Students</h3>
+
+                    <h2 id="totalStudents">0</h2>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Courses</h3>
+
+                    <h2>12</h2>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Active Records</h3>
+
+                    <h2 id="activeStudents">0</h2>
+
+                </div>
+
+            </section>
+
+            <!-- Add Student -->
+
+            <section class="form-section">
+
+                <h2>Add New Student</h2>
+
+                <form id="studentForm">
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Student Name"
+                        required>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Email Address"
+                        required>
+
+                    <input
+                        type="text"
+                        id="course"
+                        placeholder="Course"
+                        required>
+
+                    <button type="submit">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                        Add Student
+
+                    </button>
+
+                </form>
+
+            </section>
+
+            <!-- Search -->
+
+            <section class="search-box">
+
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Search Students...">
+
+            </section>
+
+            <!-- Students -->
+
+            <section>
+
+                <h2>Student Records</h2>
+
+                <div id="students" class="student-grid">
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
